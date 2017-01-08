@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BeautyParlor</string>
+    <string name="signed_in_fmt">Name</string>
+    <string name="signed_out">SIGN OUT</string>
+</resources>

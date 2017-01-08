@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="AppoinmentTime">
+        <item>10AM</item>
+        <item>11AM</item>
+        <item>12PM</item>
+        <item>01PM</item>
+        <item>02PM</item>
+        <item>03PM</item>
+        <item>04PM</item>
+        <item>05PM</item>
+        <item>06PM</item>
+        <item>07PM</item>
+    </string-array>
+</resources>
