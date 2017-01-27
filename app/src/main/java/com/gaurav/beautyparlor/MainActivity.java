@@ -1,15 +1,12 @@
 package com.gaurav.beautyparlor;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.EditText;
-import android.widget.TextView;
 
-import com.gaurav.beautyparlor.R;
 import com.google.android.gms.auth.api.Auth;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
@@ -18,7 +15,6 @@ import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.SignInButton;
 import com.google.android.gms.common.api.GoogleApiClient;
 
-import static android.provider.AlarmClock.EXTRA_MESSAGE;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener,GoogleApiClient.OnConnectionFailedListener {
 
@@ -43,9 +39,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         signInButton.setSize(SignInButton.SIZE_STANDARD);
 
         findViewById(R.id.sign_in_button).setOnClickListener(this);
-
-
-
     }
 
     @Override
@@ -93,11 +86,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void updateUI(boolean signedIn) {
         if (signedIn) {
             findViewById(R.id.sign_in_button).setVisibility(View.GONE);
-
         } else {
-
             findViewById(R.id.sign_in_button).setVisibility(View.VISIBLE);
-
         }
     }
 
